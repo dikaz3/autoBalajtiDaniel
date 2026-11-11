@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+    "h   h"
+    "n   n"
+    "ar as"
+    "ar as"
+    "ar as"
+    "ar as"
+    "f  f ";
+}
+
+header{
+    grid-area: h;
+    color: rgb(21, 255, 0);
+    
+
+}
+
+nav {
+    grid-area: n;
+    color: white;
+    background-color: green;
+
+}
+
+article{
+    grid-area: ar;
+    color: blue;
+    grid-template-columns: 1fr 1fr;
+}
+
+aside{
+    grid-area: as;
+}
+footer{
+    grid-area: f;
+}
+img {
+    width: 100%;
+}
